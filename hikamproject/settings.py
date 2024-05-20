@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,10 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1p5jn%90nc=7$ki&hv07qotc&(ff19dyvffoqb*ap-rek6_rmm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
 
 # Application definition
 
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'hikamproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'NBfVaZEYxuydxmRUYVYfLbyZJmXmBIFH',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '58698',
     }
 }
 
@@ -122,6 +126,8 @@ STATICFILES_DIRS = [
     BASE_DIR / "mysite" / "static",
     # BASE_DIR / "other_static_dir",  # if you have more static dirs
 ]
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
