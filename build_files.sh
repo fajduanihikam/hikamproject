@@ -3,6 +3,8 @@
 # Update package list and install Python 3.9 and pip if they are not available
 apt-get update && apt-get install -y python3.9 python3.9-venv python3-pip
 
+apt-get install -y libpq-dev
+
 # Create and activate a virtual environment
 python3.9 -m venv venv
 source venv/bin/activate
