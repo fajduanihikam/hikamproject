@@ -4,7 +4,12 @@
     {
       "src": "hikamproject/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9",
+        "installCommand": "pip3 install -r requirements.txt",
+        "buildCommand": "python3.9 manage.py collectstatic --noinput"
+      }
     },
     {
       "src": "build_files.sh",
@@ -25,5 +30,3 @@
     }
   ]
 }
-
-
