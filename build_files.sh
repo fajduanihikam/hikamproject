@@ -1,3 +1,5 @@
+apt-get update && apt-get install -y libpq-dev
+
 # Pastikan menggunakan pip3
 pip3 install -r requirements.txt
 
