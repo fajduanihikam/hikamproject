@@ -127,19 +127,3 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-import environ
-
-env = environ.Env(
-    DEBUG=(bool, False)
-)
-
-# Membaca file .env
-environ.Env.read_env()
-
-# Menggunakan variabel lingkungan
-SECRET_KEY = env('SECRET_KEY')
-DEBUG = env('DEBUG')
-DATABASES = {
-    'default': env.db(),
-}
