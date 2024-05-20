@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home-style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+</head>
+
+<body>
+  <div class="wrapper" id="home">
+    {% include 'includes/header.html' %}
+
+    <div class="profile-container">
+      <div class="image-sampul" style="background-image: url('{% static 'images/hikam-sampul.png' %}');">
+        <div class="profile-photo-wrapper">
+          <img class="profile-photo" src="{% static 'images/hikam-profile.png' %}">
+          <h1 href="#home" >Hi! I'm <strong>Hikam</strong></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutme-container" id="about-me">
+      <h1>About Me</h1>
+      <div class="aboutme">
+          <img style="padding: 30px; margin: 0;" class="profile-photo" src="{% static 'images/hikam-about.png' %}">
+          <p>Hello! My name is <strong>Hikam Fajduani</strong>, and I am an <strong>Information Systems</strong> student at the <strong>University of Indonesia.</strong> I thrive on learning new things and am passionate about <strong>graphic design</strong> and <strong>video editing.</strong> I am highly interested in <strong>UI/UX</strong> and <strong>frontend development.</strong> Teamwork comes naturally to me, and I am known for my strong work ethic. Despite my fear of cats 😺🐈, I remain enthusiastic and dedicated in all my professional endeavors.</p>
+      </div>
+    </div>
+
+    <div class="slide-container swiper">
+      <div class="sub-text">
+        <h3 style="margin-bottom: 20px; margin-top: 20px; font-weight: bold;">Social Media Managing Experience</h3>
+      </div>
+      <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <div class="card-image">
+                         <img src="{% static 'images/instagram-bemfasilkom.jpg' %}" alt="" class="card-img">
+                      </div>
+                  </div>
+    
+                  <div class="card-content">
+                      <h2 class="name">BEM Fasilkom UI</h2>
+                      <h4 class="periodic-name">2021 - current</h4>
+                      <p class="description">BEM Fasilkom UI is an executive student organization from the Faculty of Computer Science, University of Indonesia. At this organization, I work in managing publications and outgoing designs.</p>
+                      <a class="button" href="https://www.instagram.com/bemfasilkomui/" target="_blank" rel="noopener noreferrer">View More</a>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                    <div class="card-image">
+                       <img src="{% static 'images/instagram-pmbfasilkom.jpg' %}" alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2 class="name">PMB Fasilkom</h2>
+                    <h4 class="periodic-name">2023</h4>
+                    <p class="description">PMB Fasilkom is a coaching activity for new students at the Faculty of Computer Science, University of Indonesia. In this activity I act as head of the publication and design division.</p>
+                    <a class="button" href="https://www.instagram.com/pmbfasilkomui/" target="_blank" rel="noopener noreferrer">View More</a>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                  <div class="card-image">
+                     <img src="{% static 'images/instagram-betisfasilkom.jpg' %}" alt="" class="card-img">
+                  </div>
+              </div>
+
+              <div class="card-content">
+                  <h2 class="name">BETIS Fasilkom UI</h2>
+                  <h4 class="periodic-name">2022 - 2023</h4>
+                  <p class="description">BETIS Fasilkom UI is a free study guidance activity for final year high school students who will continue their education to university and want to take the university entrance exam. In this activity I worked as a creative staff expert.</p>
+                  <a class="button" href="https://www.instagram.com/betisfasilkomui/" target="_blank" rel="noopener noreferrer">View More</a>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                  <div class="card-image">
+                     <img src="{% static 'images/instagram-kontingencsui.jpg' %}" alt="" class="card-img">
+                  </div>
+              </div>
+
+              <div class="card-content">
+                  <h2 class="name">Kontingen CSUI</h2>
+                  <h4 class="periodic-name">2021 - current</h4>
+                  <p class="description">Kontingen CSUI is social media under "Bidang Minat dan Bakat" of BEM Fasilkom UI. On this social media I work on the design and publication of the content that comes out.</p>
+                  <a class="button" href="https://www.instagram.com/kontingencsui/" target="_blank" rel="noopener noreferrer">View More</a>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                  <div class="card-image">
+                     <img src="{% static 'images/instagram-adkesmacsui.jpg' %}" alt="" class="card-img">
+                  </div>
+              </div>
+
+              <div class="card-content">
+                  <h2 class="name">Adkesma CSUI</h2>
+                  <h4 class="periodic-name">2022 - current</h4>
+                  <p class="description">Adkesma CSUI is social media under the supervision of the Student Advocacy and Welfare Department of BEM Fasilkom UI. On this social media, I work on publications and designs that come out.</p>
+                  <a class="button" href="https://www.instagram.com/adkesmacsui/" target="_blank" rel="noopener noreferrer">View More</a>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                  <div class="card-image">
+                     <img src="{% static 'images/instagram-fesrakui.jpg' %}" alt="" class="card-img">
+                  </div>
+              </div>
+
+              <div class="card-content">
+                  <h2 class="name">Festival Rakyat UI</h2>
+                  <h4 class="periodic-name">2021</h4>
+                  <p class="description">Festival Rakyat UI is a festival and social activity under the Community Service Department of BEM University of Indonesia. In this activity I act as creative staff who works on videos such as podcasts, bumpers and so on.</p>
+                  <a class="button" href="https://www.instagram.com/festivalrakyat/" target="_blank" rel="noopener noreferrer">View More</a>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                  <div class="card-image">
+                     <img src="{% static 'images/instagram-fass.jpg' %}" alt="" class="card-img">
+                  </div>
+              </div>
+
+              <div class="card-content">
+                  <h2 class="name">Forum Anak Sulawesi Selatan</h2>
+                  <h4 class="periodic-name">2020 - 2021</h4>
+                  <p class="description">Forum Anak Sulawesi Selatan is an organization under the Ministry of Women's Empowerment and Child Protection of the Republic of Indonesia. In this organization I work as a creative media and publication staff.</p>
+                  <a class="button" href="https://www.instagram.com/forumanaksulawesiselatan/" target="_blank" rel="noopener noreferrer">View More</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+      <div style="color: #C5FF95;" class="swiper-button-next swiper-navBtn"></div>
+      <div style="color: #C5FF95;" class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+    
+    <!-- JavaScript -->
+    <!--Uncomment this line-->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+
+    <div class="project-container">
+      <h1 id="projects">Projects</h1>
+      <div class="project">
+        <div class="profile-photo-wrapper" style="margin-top: 30px;">
+          <i class='fas fa-tools' style='margin-top:30px;font-size:48px;color:white;justify-content: center;align-items: center;'></i>
+        </div>
+        <h3>This section is under construction</h3>
+      </div>
+    </div>
+
+    <!-- Konten utama halaman Anda -->
+
+    {% include 'includes/footer.html' %}
+  </div>
+
+<script>
+  var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+</script>
+</body>
+</html>
