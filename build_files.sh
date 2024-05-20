@@ -1,7 +1,13 @@
-apt-get update && apt-get install -y libpq-dev
+#!/bin/bash
 
-# Pastikan menggunakan pip3
+# Install the necessary dependencies
+sudo apt-get update && sudo apt-get install -y libpq-dev
+
+# Install Python dependencies
 pip3 install -r requirements.txt
 
-# Jalankan perintah collectstatic
+# Collect static files
 python3.9 manage.py collectstatic --noinput
+
+# Start the application
+gunicorn -b :8000 wsgi:application
